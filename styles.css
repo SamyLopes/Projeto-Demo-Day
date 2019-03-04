@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+
+header {
+    margin: ;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
+.logo {
+    
+}
+
+#logo {
+    width: 80px;
+    height: 70px;
+}
+
+.login {
+    display: flex;
+}
+
+.professores {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.login div {
+    margin: 10px;
+}
+
+.caixa-login {
+    justify-content: center;
+}
