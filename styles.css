@@ -3,14 +3,10 @@ body {
 }
 
 header {
-    margin: ;
     display: flex;
     justify-content: space-between;
     background-color: yellow;
-}
-
-.logo {
-    
+    padding: 20px;
 }
 
 #logo {
@@ -25,6 +21,12 @@ header {
 .professores {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
+    display: flex;
+	
+	
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
 }
 
 .login div {
@@ -32,5 +34,39 @@ header {
 }
 
 .caixa-login {
-    justify-content: center;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+    align-content: space-between;
+}
+
+.menu-hamburguer {
+    margin: 5px;
+}
+
+.container {
+   display: inline-block;
+   cursor: pointer; 
+}
+
+.barra1, .barra2, .barra3 {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.alterar .barra1 {
+    transform: rotate(-45deg); translate(-9px 6px);
+}
+
+.alterar .barra2 {
+    opacity: 0;
+}
+
+.alterar .barra3 {
+    transform: rotate(45deg); translate(-8px -8px);
 }
