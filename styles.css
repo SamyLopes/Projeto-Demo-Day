@@ -99,11 +99,21 @@ header {
 
 .nav-menu-hamburguer a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
 }
 
 .section1 {
-    display: block;
-    justify-content: space-between;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
     margin: 50px;
+}
+
+.section1 a {
+    padding: 30px;
 }
