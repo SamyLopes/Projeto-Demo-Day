@@ -9,8 +9,8 @@ header {
 }
 
 #logo {
-    width: 80px;
-    height: 70px;
+    width: 100px;
+    height: 80px;
 }
 
 .login {
@@ -21,8 +21,6 @@ header {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     display: flex;
-
-
     justify-content: flex-end;
     align-items: center;
     align-content: center;
@@ -118,6 +116,12 @@ header {
     padding: 30px;
 }
 
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
 .sociais{
     align-items: center;
     background-color: rgb(57, 134, 185);
@@ -136,7 +140,7 @@ header {
 
 #parceiros{
     font-size: 30pt;
-    margin: 10px; 5px;
+    margin: 10px 5px;
 }
 .sociais img{
     height: 65px;
@@ -164,4 +168,20 @@ header {
     height: 50px;
     margin: 0 5px;
     width: 190px;
+}
+
+footer{ 
+    background-color:rgb(87, 189, 223);
+    height: 70px;
+}
+                                                                    
+footer p{
+    margin: 0;
+    font-size: 18pt;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;   
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;                                              
 }
