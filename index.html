@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Página Inical</title>
@@ -14,30 +15,40 @@
 
 <body>
     <header>
-        <div>
-            <img id="logo" src="logo.png" alt="">
+
+
+        <div class="alinhar">
+            <img id="logo" src="logo.png" alt="logo">
+        </div>
+
+
+        <div class="menu-hamburguer">
+            <span class="traco traco-1"></span>
+            <span class="traco traco-2"></span>
+            <span class="traco traco-3"></span>
         </div>
 
         <div class="login">
             <div class="professores">
-                <p>Acesso restrito para os professores</p>
+                <p>Acesso dos professores</p>
             </div>
 
+
             <div class="caixa-login">
-                <input type="text" placeholder="Usuário">
-                <input type="password" placeholder="Senha">
-                <input type="button" value="Entrar" />
+                <input class="acesso" type="text" placeholder="Usuário">
+                <input class="acesso" type="password" placeholder="Senha">
+                <input class="botao" type="button" value="Entrar" />
             </div>
         </div>
 
     </header>
 
     <div class="tudo">
-        <div class="menu-hamburguer">
+        <!-- <div class="menu-hamburguer">
             <span class="traco traco-1"></span>
             <span class="traco traco-2"></span>
             <span class="traco traco-3"></span>
-        </div>
+        </div> -->
 
         <nav class="nav-menu-hamburguer">
             <a href="nav">Sobre</a>
@@ -52,70 +63,102 @@
         <div id="banner" class="banner">
 
             <div id="banner_img">
-                <img src="banner_img/1.jpg" width="900px" height="300px" alt="Banner">
+                <div class="noticia1">
+                    <a
+                        href="https://www.dgabc.com.br/Noticia/2924330/software-ajuda-na-alfabetizacao-de-alunos-com-dificuldade-de-aprender">
+                        <!-- <img src="banner_img/1.jpg" width="900px" height="300px" alt="Banner"> -->
+                        <div>
+                            <h2>Software ajuda na alfabetização de alunos dificuldade de aprender</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- <div class="noticia2">
+                    <a href="http://www.abcdoabc.com.br/santo-andre/noticia/santo-andre-ultrapassa-meta-indice-educacao-basica-70245">
+                        <div><h2>Santo André ultrapassa meta do índice de Educação Básica (Ideb) 
+                            <li>e Projeto Alfatech é destaque</li></h2></div>
+                        </a>
+                    </div> -->
+
+                <!-- <div class="noticias3">
+                        <a href="http://www.ufabc.edu.br/noticias/projeto-de-software-que-auxilia-a-alfabetizacao-de-criancas-de-baixa-renda-e-premiado-em-concurso-nacional">
+                            <h2>Projeto Alfatech é premiado em concurso nacional</h2></a>
+                        </div> -->
+
             </div>
-                    
+
             <div id="botoes">
-                    
+
                 <a href="javascript:void(0);" id="banner_img_1" class="hover" onclick="mudaImg('0');">1</a>
                 <a href="javascript:void(0);" id="banner_img_2" onclick="mudaImg('1');">2</a>
                 <a href="javascript:void(0);" id="banner_img_3" onclick="mudaImg('2');">3</a>
-                <a href="javascript:void(0);" id="banner_img_4" onclick="mudaImg('3');">4</a>
-                    
+
             </div>
-                
+
         </div>
 
-
-        <div>
-            EXPLICAÇÃO
-        </div>
 
     </section>
 
     <section class="section2">
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aperiam. Odio eum ipsum illo dolor corporis enim nostrum cumque repudiandae veniam inventore ut est qui, laborum eos provident nisi tempora? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, hic eveniet soluta quaerat, illo cumque veniam tenetur nostrum pariatur aperiam laudantium voluptas debitis exercitationem impedit, voluptatum harum tempore magnam placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, dolores vitae. Maxime deleniti quisquam esse qui voluptatibus totam odit aspernatur tempora accusantium cupiditate natus iste ipsa, facere saepe ani</corrupti></p>
+            <p style="text-align: justify;"> O projeto Alfatech foi criado a partir de uma parceria com o Instituto
+                Nacional de Ciência e Tecnologia sobre Comportamento, Cognição e Ensino (INCT-ECCE) e tem como objetivo
+                auxiliar no processo de alfabetização de alunos, da rede pública, que apresentam dificuldade de acordo
+                com o desempenho esperado, através da plataforma de software Gerenciador de Ensino Individualizado por
+                Computador (GEIC). Esta plataforma é composta por jogos interativos que proporcionam às crianças um
+                método alternativo de ensino. Para a execução do projeto, o time Enactus UFABC realizou uma parceria com
+                a Coordenação de Estudos Pedagógicos para Estudos Curriculares (CEPEC), uma vertente da Secretaria de
+                Educação de Santo André, para definir as escolas de atuação do Alfatech. Atualmente, o projeto é
+                realizado em três escolas (projeto piloto) e para que o aluno tenha êxito é necessário participar de
+                três sessões semanais. Nessas aulas, o ensino é individualizado (estudante + computador +
+                professor/tutor) e o aluno só avança se realmente comprendeu o que foi ensinado, por meio de
+                pré/pós-testes durante as unidades de ensino.
+            </p>
         </div>
 
         <div class="video">
-            <iframe width="450" height="300" src="https://www.youtube.com/embed/dO21dNsMSmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="450" height="300" src="https://www.youtube.com/embed/dO21dNsMSmM" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </section>
 
-    <div class="sociais">
-        <p>Nos siga nas redes sociais</p>
 
-        <a href="https://www.facebook.com/enactus.ufabc?fref=photo">
-            <img src="logos/logo-face.png" alt="">
-        </a>
+    <!-- <img src="logos/logo-ig.png" alt="" class="ig"> -->
+    <!-- <img src="logos/logo-twitter.png" alt=""> -->
 
-        <a href="https://instagram.com/enactus.ufabc?utm_source=ig_profile_share&igshid=1ibv1hkirc0iw">
-            <img src="logos/logo-ig.png" alt="" class="insta">
-        </a>
+    <div class="parceirostop">
+        <div class="sociais">
+            <p>Acompanhe o Projeto Alfatech nas redes sociais</p>
 
-        <a href="https://www.linkedin.com/company/enactusufabc/about/">
-            <img src="logos/logo-linkedin.png" class="linkedin">
-        </a>
+            <div class="icones">
+                <a href="https://www.facebook.com/enactus.ufabc?fref=photo">
+                    <img src="logos/logo-face.png" alt="">
+                </a>
 
-        <!-- <img src="logos/logo-ig.png" alt="" class="ig"> -->
-        <!-- <img src="logos/logo-twitter.png" alt=""> -->
-        
+                <a href="https://instagram.com/enactus.ufabc?utm_source=ig_profile_share&igshid=1ibv1hkirc0iw">
+                    <img src="logos/logo-ig.png" alt="" class="insta">
+                </a>
 
-        <p id="parceiros">Nossos parceiros</p>
+                <a href="https://www.linkedin.com/company/enactusufabc/about/">
+                    <img src="logos/logo-linkedin.png" class="linkedin">
+                </a>
+            </div>
+            <p id="parceiros">Nossos parceiros</p>
 
-        <div class="parceiros">
-            <img src="parceiros/Ufabc_logo.png" alt="">
-            <img src="parceiros/Enactus.png" alt="">
-            <img src="parceiros/logo_ufscar1.png" alt="">
-            <img src="parceiros/inct-ecce.png" alt="">
-            <img src="parceiros/pf-santoandre.png" alt="">
+            <div class="parceiros">
+                <img src="parceiros/Ufabc_logo.png" alt="">
+                <img src="parceiros/Enactus.png" alt="">
+                <img src="parceiros/logo_ufscar1.png" alt="">
+                <img src="parceiros/inct-ecce.png" alt="">
+                <img src="parceiros/pf-santoandre.png" alt="">
+            </div>
         </div>
-    </div>
 
-<footer>
-    <p> © Todos os direitos reservados</p>
-</footer>
+        <footer>
+            <p> © Todos os direitos reservados</p>
+        </footer>
 
 </body>
 

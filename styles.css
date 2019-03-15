@@ -3,22 +3,37 @@ body {
 }
 
 header {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: white;
 }
 
 #logo {
-    width: 100px;
-    height: 80px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 50px;
+}
+
+.alinhar {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    align-self: center;
 }
 
 .login {
     display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 0px 50px 0px 0px;
 }
 
 .professores {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
@@ -26,22 +41,51 @@ header {
     align-content: center;
 }
 
+.professores p {
+    margin: 5px;
+}
+
 .login div {
-    margin: 10px;
+    margin: 5px;
 }
 
 .caixa-login {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
-    align-items: stretch;
     align-content: space-between;
+    border-radius: 30px;
+
+}
+
+.caixa-login input {
+    justify-content: space-between;
+    margin: 2px;
+}
+
+.botao {
+    background-color: rgb(53, 229, 235);
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.acesso {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
 }
 
 .tudo {
     background-color: #1a9bc9;
     padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    /*flex-direction: row; */
 }
 
 .menu-hamburguer {
@@ -53,14 +97,15 @@ header {
     justify-content: center;
     width: 30px;
     margin: 10px;
+    padding: 3px;
 }
 
 .traco {
     background-color: black;
     border-radius: 30px;
     display: block;
-    height: 3px;
-    margin: 4.25px 0;
+    height: 5px;
+    margin: 3px 0;
     transition: 0.5s;
     width: 100%;
 }
@@ -100,6 +145,7 @@ header {
     color: white;
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .section1 {
@@ -109,38 +155,30 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 50px;
+    /* margin: 50px; */
 }
 
 .section1 a {
-    padding: 30px;
+    /* padding: 30px; */
 }
 
-#banner #banner_img {
-    width: 900px;
-    height: 300px;
-    border: solid 3px #333;
-}
+
 
 #banner a {
-    border: solid 1px #333;
-    background-color: #F7F7F7;
     padding: 5px;
     text-decoration: none;
-    color: #000;
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    background-color: rgb(216, 210, 210);
 }
 
 #banner a:hover {
-    border: solid 1px #333;
-    text-decoration: underline;
     background-color: #333;
     color: #FFF;
-}
-
-#banner a.hover {
-    background-color: #333;
-    color: #FFF;
-}
+} 
 
 #banner #botoes {
     width: 900px;
@@ -151,30 +189,69 @@ header {
     padding-top: 5px;
 }
 
+.noticia1{
+    background-image: url(banner_img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vw;
+    justify-content: flex-end;
+}
+
+/* .noticia2 {
+        background-image: url(banner_img/2.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50vw;
+        justify-content: flex-end;
+    
+} */
+
+/* .noticia3 {
+        background-image: url(banner_img/3.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50vw;
+        justify-content: flex-end;
+    
+} */
+
 .section2 {
     display: flex;
     justify-content: space-between;
     margin: 20px;
 }
 
+.section2 div p {
+    color: rgb(7, 75, 71);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+
 .video {
-    margin: 0px 30px 0px 30px;
+    margin: 30px;
+    
 }
 
 .sociais {
     align-items: center;
-    background-color: rgb(57, 134, 185);
     color: white;
-    /* display: flex; */
-    /* font-size: 18pt; */
-    justify-content: center;
-    height: 292px;
-    text-align: center;
 }
 
 .sociais p:nth-child(1) {
     font-size: 30pt;
-    margin: 15px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 #parceiros {
@@ -187,8 +264,17 @@ header {
     width: 65px;
 }
 
+.icones a{
+    margin: 5px;
+}
+
+.icones a:hover {
+    opacity: 0.5;
+}
+
 .parceiros img:nth-child(1) {
     margin: 0 5px;
+    width: 90px;
 }
 
 .parceiros img:nth-child(2) {
@@ -223,6 +309,18 @@ div .linkedin {
     padding: 0 0 5px 0;
 }
 
+.parceirostop{
+    align-items: center;
+    background-color: rgb(57, 134, 185);
+    color: white;
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18pt;
+    justify-content: center;
+    height: 292px;
+    text-align: center;
+}
+
 footer {
     background-color: rgb(87, 189, 223);
     height: 70px;
@@ -237,4 +335,9 @@ footer p {
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding: 30px 0px 0px 0px;
 }
+
+
+
+
