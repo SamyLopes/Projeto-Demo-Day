@@ -44,3 +44,13 @@ function mudaImg(i) {
   document.getElementById("banner_img").innerHTML = "<img src='banner_img/" + img[indice] + ".jpg' width='900' height='300' border='0' alt='Banner'>";
 
 }
+
+// const noticia = document.querySelector('banner_img')
+// const mudar = document.querySelector('botoes')
+
+// const atualizarNoticia = function() {
+//   mudar.classList.toggle('ativo')
+//   noticia.classList.toggle('visivel')
+// }
+
+// mudar.onclick=atualizarNoticia
