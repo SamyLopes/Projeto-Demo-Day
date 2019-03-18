@@ -7,7 +7,7 @@ body {
 
 header {
     align-items: center;
-    background-color: white;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     /* height: 200px; */
@@ -551,7 +551,7 @@ footer p {
     opacity: 0;
 } */
 
-#banner{
+/* #banner{
     display: block;
     height: 100%;
     width: 100%;
@@ -559,76 +559,5 @@ footer p {
 
 .banner_img:target{
     display: none;
-}
+} */
 
-/* MEDIA QUERY */
-
-@media(min-width: 768px){
-    
-}
-
-/* Breakingpoint para Notebooks grandes e Desktop */
-
-@media(min-width: 1200px){
-    body{
-        margin:auto;
-        max-width: 1200px;
-    }
-}
-
-/* Mobile */
-@media(min-width:360px){
-
-    header{
-        align-items: center;
-        flex-direction: column-reverse;
-        justify-content: center;
-        height: 150px;
-        padding: 0;
-
-    }
-
-    .menu-hamburguer{
-        align-items: center;
-        justify-content: center;
-        margin: 5px 0 0 10px; 
-    }
-
-    .login {
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 0 0 30px;
-        padding: 0;
-        width: 250px;
-    }
-    
-    .caixa-login{
-        flex-direction: row;
-    }
-    /* .traco{
-        background-color: black;
-        border:2px;
-        border-radius: 30px;
-        display: block;
-        height: 3px;
-        margin: 2px 0;
-        transition: 0.5s;
-        width: 100%;
-    } */
-    .nav-menu-hamburguer{
-        font-size: 8pt;
-        width: 100%;
-    }
-
-    .professores{
-        font-size: 20px;
-        text-align: center;
-        padding: 0 50px 0 0;
-    }
-    .alinhar{
-        display: none;
-    }
-
-
-}
