@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Amatic SC', cursive;
 }
 
 /* HEADER */
@@ -162,7 +163,136 @@ header {
 }
 
 /* SEÇÃO 1 */
-.section1 {
+
+.section1{
+    align-items: center;
+    /* background-color: black; */
+    display: flex;
+    justify-content:center;
+    height:460px;
+    margin: 0;
+    /* width: 100%; */
+    /* padding: 20px 250px; */
+}
+
+
+.carrossel{
+    align-items: center;
+    /* display: flex; */
+    justify-content: center;
+    /* margin: 5px 0 ;  */
+    height: 460px;
+    width: 600px;
+}
+
+.noticia{
+    align-items: center;
+    display: none;
+    justify-content: center;
+    /* margin: 10px; */
+    height: 460px;
+    width: 600px;
+}
+
+.noticia:target {
+    align-items: center;
+    display: block;
+    justify-content: center;
+}
+
+
+ /* #noticia-1{
+    background-image: url(banner_img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+    height: 460px;
+    width: 100%;
+} */
+
+/*
+#noticia-2{
+    background-image: url(banner_img/2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    
+}
+
+#noticia-3{
+    background-image: url(banner_img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    
+} */
+
+/* .noticia #noticia-1 a{
+    display: flex;
+    text-decoration:none;
+    height: 50px;
+    margin: 0;
+    width: 600px;
+} */
+
+.noticia a{
+    height: 10px;
+    text-decoration: none;
+}
+
+
+#noticia-1{
+    align-items: center;
+    justify-content: center;
+}
+
+.noticia h2:hover{
+    background-color: #1a9bc9;
+    color: #FFF;
+}
+
+.noticia h2{
+    background-color: lightgray;
+    font-size: 20pt;
+    text-align: center;
+    margin:0;
+    height: 50px;
+    width: 600px;
+}
+
+.titulo-noticia1{
+display: flex;
+}
+.titulo-noticia1 h2{
+    color:black;
+    padding: 10px 0 0 0;
+}
+
+.titulo-noticia2 h2{
+    color:black;
+    font-size: 16pt;
+    padding: 10px 0 0 0;
+}
+
+.titulo-noticia3 h2{
+    color:black;
+    padding: 12px 0 0 0;
+    height: 48px;
+}
+
+
+.carrossel img{
+    /* display: flex; */
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+}
+
+
+/* .section1 {
     align-content: center;
     align-items: center;
     display: flex;
@@ -174,24 +304,24 @@ header {
 
 .section1 a {
     /* padding: 30px; */
-}
+/* } */
 
 
 
-#banner a {
+/* #banner a {
     background-color: rgb(216, 210, 210);
     color: rgb(0, 0, 0);
     font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: bold; */
     /* height: 10px; */
-    text-align: right;
+    /* text-align: right;
     text-decoration: none;
     padding: 5px;
-}
+} */
 
 
-#banner a:hover {
+/* #banner a:hover {
     background-color: #333;
     color: #FFF;
 } 
@@ -215,31 +345,31 @@ header {
     height: 50vw;
     justify-content: flex-end;
     width: 100%;
-}
+} */ 
 
 /* .noticia2 {
-        background-image: url(banner_img/2.jpg);
-        background-position: center;
-        background-size: cover;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 50vw;
-        justify-content: flex-end;
+    background-image: url(banner_img/2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vw;
+    justify-content: flex-end;
     
-} */
+}
 
-/* .noticia3 {
-        background-image: url(banner_img/3.jpg);
-        background-position: center;
-        background-size: cover;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 50vw;
-        justify-content: flex-end;
+.noticia3 {
+    background-image: url(banner_img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vw;
+    justify-content: flex-end;
     
 } */
 
@@ -421,17 +551,84 @@ footer p {
     opacity: 0;
 } */
 
-/* .banner{
+#banner{
     display: block;
     height: 100%;
     width: 100%;
 }
 
-.banner:target{
+.banner_img:target{
     display: none;
-} */
+}
+
 /* MEDIA QUERY */
 
 @media(min-width: 768px){
     
+}
+
+/* Breakingpoint para Notebooks grandes e Desktop */
+
+@media(min-width: 1200px){
+    body{
+        margin:auto;
+        max-width: 1200px;
+    }
+}
+
+/* Mobile */
+@media(min-width:360px){
+
+    header{
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 150px;
+        padding: 0;
+
+    }
+
+    .menu-hamburguer{
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0 0 10px; 
+    }
+
+    .login {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 0 30px;
+        padding: 0;
+        width: 250px;
+    }
+    
+    .caixa-login{
+        flex-direction: row;
+    }
+    /* .traco{
+        background-color: black;
+        border:2px;
+        border-radius: 30px;
+        display: block;
+        height: 3px;
+        margin: 2px 0;
+        transition: 0.5s;
+        width: 100%;
+    } */
+    .nav-menu-hamburguer{
+        font-size: 8pt;
+        width: 100%;
+    }
+
+    .professores{
+        font-size: 20px;
+        text-align: center;
+        padding: 0 50px 0 0;
+    }
+    .alinhar{
+        display: none;
+    }
+
+
 }
